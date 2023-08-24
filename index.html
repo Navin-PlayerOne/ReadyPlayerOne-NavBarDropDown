@@ -2,26 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ReadyPlayerOne</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-      crossorigin="anonymous"
-    />
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
 </head>
-    <video id="backgroundVideo" playsinline autoplay loop muted>
-        <source src="./assets/bgv3.mp4" type="video/mp4">
-    </video>
-    <body>
-        <header class="header">
-        <a href="#" class="logo">PlayerOne</a>
-        <nav>
-            <ul class="menu-items">
+<video id="backgroundVideo" playsinline autoplay loop muted>
+    <source src="./assets/bgv3.mp4" type="video/mp4">
+</video>
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href="#">PlayerOne</a></div>
+            <input type="radio" name="slider" id="menu-btn">
+            <input type="radio" name="slider" id="close-btn">
+            <ul class="nav-items">
+                <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
                 <li>
-                    <a href="#" class="menu-items">Gallery</a>
+                    <a href="#" class="desktop-item">Gallery</a>
+                    <input type="checkbox" id="showMega1">
+                    <label for="showMega1" class="mobile-item">Gallery</label>
                     <div class="mega-menu">
                         <div class="container">
                             <div class="image-wrapper">
@@ -57,9 +57,10 @@
                         </div>
                     </div>
                 </li>
-                <!-- <li><a href="#" class="menu-items">Videos</a></li> -->
                 <li>
-                    <a href="#" class="menu-items">Stream</a>
+                    <a href="#" class="desktop-item">Stream</a>
+                    <input type="checkbox" id="showMega2">
+                    <label for="showMega2" class="mobile-item">Stream</label>
                     <div class="mega-menu">
                         <div class="container">
                             <div class="image-wrapper">
@@ -69,29 +70,31 @@
                             </div>
                             <div class="image-wrapper">
                                 <img class="img" src="./assets/stream2.png" alt="">
-                                <div class="cont">Prime Video</div>
+                                <div class="cont">PrimeVideo</div>
                                 <div class="cont cont-sub">Stream</div>
                             </div>
                             <div class="image-wrapper">
                                 <img class="img" src="./assets/stream3" alt="">
-                                <div class="cont">Apple TV</div>
+                                <div class="cont">AppleTV</div>
                                 <div class="cont cont-sub">Stream</div>
                             </div>
                             <div class="image-wrapper">
                                 <img class="img" src="./assets/stream4.webp" alt="">
-                                <div class="cont">Play Movies</div>
+                                <div class="cont">PlayMovies</div>
                                 <div class="cont cont-sub">Buy/Rent</div>
                             </div>
                             <div class="image-wrapper">
                                 <img class="img" src="./assets/stream5.png" alt="">
-                                <div class="cont">HBO Max</div>
+                                <div class="cont">HBOMax</div>
                                 <div class="cont cont-sub">Stream</div>
                             </div>
                         </div>
                     </div>
                 </li>
                 <li>
-                    <a href="#" class="menu-items">Ratings</a>
+                    <a href="#" class="desktop-item">Ratings</a>
+                    <input type="checkbox" id="showMega3">
+                    <label for="showMega3" class="mobile-item">Ratings</label>
                     <div class="mega-menu">
                         <div class="container-rating">
                             <img src="./assets/poster.avif" alt="" class="poster">
@@ -115,71 +118,58 @@
                     </div>
                 </li>
                 <li>
-                    <a href="#" class="menu-items">Cast</a>
+                    <a href="#" class="desktop-item">Cast</a>
+                    <input type="checkbox" id="showMega4">
+                    <label for="showMega4" class="mobile-item">Cast</label>
                     <div class="mega-menu">
                         <div class="container">
                             <div class="image-wrapper">
                                 <img class="img" src="./assets/cast1.jfif" alt="">
-                                <div class="cont">Tye Sheridan</div>
-                                <div class="cont cont-sub">Wade Watts</div>
+                                <div class="cont">Tye&nbsp;Sheridan</div>
+                                <div class="cont cont-sub">Wade&nbsp;Watts</div>
                             </div>
                             <div class="image-wrapper">
                                 <img class="img" src="./assets/cast2.jfif" alt="">
-                                <div class="cont">Olivia Cooke</div>
-                                <div class="cont cont-sub">Samantha Evelyn cook</div>
+                                <div class="cont">Olivia&nbsp;Cooke</div>
+                                <div class="cont cont-sub">Samantha&nbsp;Evelyn&nbsp;cook</div>
                             </div>
                             <div class="image-wrapper">
                                 <img class="img" src="./assets/cast3.jpg" alt="">
-                                <div class="cont">Mark Rylance</div>
-                                <div class="cont cont-sub">James Halliday</div>
+                                <div class="cont">Mark&nbsp;Rylance</div>
+                                <div class="cont cont-sub">James&nbsp;Halliday</div>
                             </div>
                             <div class="image-wrapper">
                                 <img class="img" src="./assets/cast4.jfif" alt="">
-                                <div class="cont">Ben Mendelsohn</div>
+                                <div class="cont">Ben&nbsp;Mendelsohn</div>
                                 <div class="cont cont-sub">Sorrento</div>
                             </div>
                             <div class="image-wrapper">
                                 <img class="img" src="./assets/cast5.jfif" alt="">
-                                <div class="cont">T.J. Miller</div>
-                                <div class="cont cont-sub">i-R0k</div>
+                                <div class="cont">T.J.&nbsp;Miller</div>
+                                <div class="cont cont-sub">iR0k</div>
                             </div>
                         </div>
                     </div>
                 </li>
-                <li class="dropdown">
-                    <a href="#" class="menu-items">About</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#" class="menu-item">Author</a></li>
-                        <li class="dropdown dropdown-right">
-                            <a href="#" class="menu-item">
-                                Report
-                                <i class="fas fa-angle-right"></i>
-                            </a>
-                            <ul class="menu-right">
+                <li>
+                    <a href="#" class="desktop-item">About</a>
+                    <input type="checkbox" id="showDrop">
+                    <label for="showDrop" class="mobile-item">About</label>
+                    <ul class="drop-menu">
+                        <li><a href="#">Author</a></li>
+                        <li><a href="#">Report</a></li>
+                        <!-- <li>
+                            <a href="#">Report</a>
+                            <ul class="drop-menu">
                                 <li><a href="#">Abuse</a></li>
-                                <li><a href="#">Bug</a></li>
+                                <li><a href="#">bug</a></li>
                             </ul>
-                        </li>
+                        </li> -->
                     </ul>
                 </li>
             </ul>
-        </nav>
-        </header>
-        
-    </body>
-    <script>
-            const video = document.getElementById('backgroundVideo');
-            const menuItems = document.querySelector('.menu-items');
-            video.playbackRate = 1.5;
-
-            menuItems.addEventListener('mouseenter', () => {
-            video.playbackRate = 0.5; // Adjust the desired playback speed
-            });
-
-            menuItems.addEventListener('mouseleave', () => {
-            video.playbackRate = 1.5;
-            });
-
-
-    </script>
+            <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+        </div>
+    </nav>
+</body>
 </html>
